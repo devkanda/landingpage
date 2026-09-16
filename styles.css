@@ -4210,3 +4210,18 @@ button:focus-visible{
 
 /* O fallback permanece atrás da imagem apenas como segurança,
    sem participar visualmente quando o asset local carrega. */
+
+
+/* ======================================================
+   V34.28 — ENQUADRAMENTO JUCELIO
+   Preview local com mais respiro, sem sensação de zoom.
+   ====================================================== */
+
+.jucelio-card-preview{
+  background:#deddd6;
+}
+
+.jucelio-card-preview .jucelio-site-shot{
+  object-fit:cover !important;
+  object-position:center center !important;
+}
