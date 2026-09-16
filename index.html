@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#17131b" name="theme-color"/>
+<meta content="Siel — sites personalizados com identidade, cuidado e atenção em cada detalhe." name="description"/>
+<title>Siel — Web Design</title>
+<script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('siel-theme');
+        const theme = saved === 'light' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+        const themeMeta = document.querySelector('meta[name="theme-color"]');
+        if (themeMeta) themeMeta.setAttribute('content', theme === 'dark' ? '#17131b' : '#fbf4ef');
+      } catch (e) {
+        document.documentElement.dataset.theme = 'dark';
+        document.documentElement.style.colorScheme = 'dark';
+      }
+    })();
+  </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="./styles.css" rel="stylesheet"/>
+</head>
+<body>
+<main>
+<section class="hero" id="inicio">
+<div aria-hidden="true" class="hero-media-clean hero-media"></div><div aria-hidden="true" class="hero-monogram">S</div>
+<div aria-hidden="true" class="hero-glow"></div>
+<div aria-hidden="true" class="hero-accent">
+<span class="hero-accent-line"></span>
+<span class="hero-accent-star">✦</span>
+<span class="hero-accent-label">Siel — web design &amp; desenvolvimento</span>
+</div>
+<div class="hero-shell">
+<header class="header">
+<a aria-label="Siel — início" class="brand" href="#inicio">
+<span class="brand-row"><i>✦</i><strong>SIEL</strong><i>✦</i></span>
+<small>WEB DESIGN</small>
+</a><div class="header-center"><nav aria-label="Navegação principal" class="nav">
+<a href="#inicio">Início</a>
+<a href="#portfolio">Portfólio</a>
+<a href="#servicos">Serviços</a>
+<a href="#contato">Contato</a></nav></div><div class="theme-corner"><button aria-label="Ativar modo claro" aria-pressed="true" class="theme-toggle" id="themeToggle" title="Modo claro" type="button">
+<span aria-hidden="true" class="theme-toggle-icons">
+<svg class="theme-icon theme-icon-sun" focusable="false" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="3.5"></circle>
+<path d="M12 2.5v2M12 19.5v2M4.57 4.57l1.42 1.42M18.01 18.01l1.42 1.42M2.5 12h2M19.5 12h2M4.57 19.43l1.42-1.42M18.01 5.99l1.42-1.42"></path>
+</svg>
+<svg class="theme-icon theme-icon-moon" focusable="false" viewbox="0 0 24 24">
+<path d="M20.3 15.2A8.2 8.2 0 0 1 8.8 3.7 8.4 8.4 0 1 0 20.3 15.2Z"></path>
+</svg>
+</span>
+</button></div>
+</header>
+<div class="hero-copy">
+<span aria-hidden="true" class="hero-spark hero-spark-left">✦</span>
+<span aria-hidden="true" class="hero-spark hero-spark-right">✦</span>
+<h1>Um site com a<br/><span>cara do seu negócio.</span></h1>
+<p>Eu crio sites personalizados, com identidade visual, <strong>estratégia</strong> e cuidado em cada detalhe.</p>
+<div class="hero-actions">
+<a class="button button-primary" href="#contato">Quero um site assim</a>
+<a class="button button-secondary" href="#portfolio">Ver projetos</a>
+</div>
+</div>
+</div>
+</section>
+<section class="portfolio-section" id="portfolio">
+<div class="section-wrap">
+<div class="portfolio-intro">
+<div>
+<div class="section-kicker"><span>✦</span><span>Portfólio</span></div>
+<h2>Projetos<br/><em>selecionados.</em></h2>
+</div>
+<p>Alguns projetos que mostram como eu transformo ideias em experiências digitais com identidade.</p>
+</div>
+<div class="project-card-grid">
+<article class="portfolio-card">
+<a aria-label="Visitar o projeto Silvia’s Hair" class="portfolio-card-preview" href="https://silviashair.vercel.app/" rel="noopener" target="_blank">
+<img alt="Preview do site Silvia’s Hair" src="./assets/silvias-hair-preview.png"/>
+</a>
+<div class="portfolio-card-body">
+<div class="portfolio-card-meta">
+<span class="portfolio-card-number">01</span>
+<span>Site institucional · Beleza</span>
+</div>
+<h3>Silvia’s Hair</h3>
+<p>Site institucional para apresentar o salão, seus serviços e facilitar o caminho até o agendamento.</p>
+<a class="portfolio-card-link" href="https://silviashair.vercel.app/" rel="noopener" target="_blank">
+                Visitar site <span>↗</span>
+</a>
+</div>
+</article>
+<article class="portfolio-card portfolio-card-jucelio">
+<a aria-label="Visitar o projeto Jucelio Silva" class="portfolio-card-preview jucelio-card-preview" href="https://juceliosilva.com.br/" rel="noopener" target="_blank">
+<div aria-hidden="true" class="jucelio-preview-fallback">
+<div class="jucelio-preview-topbar">
+<strong>Jucelio Silva</strong>
+<span>Sobre    Serviços    Resultados</span>
+</div>
+<div class="jucelio-preview-copy">
+<small>JUCELIO SILVA · COLORISTA</small>
+<b>Colorimetria,<br/>transformação<br/>e cuidado.</b>
+</div>
+</div>
+<img alt="Preview do site Jucelio Silva" class="jucelio-site-shot" loading="lazy" onerror="this.style.display='none'" src="https://image.thum.io/get/width/1400/crop/875/noanimate/https://juceliosilva.com.br/"/>
+</a>
+<div class="portfolio-card-body">
+<div class="portfolio-card-meta">
+<span class="portfolio-card-number">02</span>
+<span>Site institucional · Beleza</span>
+</div>
+<h3>Jucelio Silva</h3>
+<p>Site institucional para cabeleireiro e colorista, com foco em serviços, resultados e agendamento.</p>
+<a class="portfolio-card-link" href="https://juceliosilva.com.br/" rel="noopener" target="_blank">
+                Visitar site <span>↗</span>
+</a>
+</div>
+</article>
+<article class="portfolio-card">
+<div class="portfolio-card-preview">
+<img alt="Preview do estudo conceitual Clara M. Consultoria" src="./assets/project-03.jpg"/>
+<span class="portfolio-card-badge">Estudo conceitual</span>
+</div>
+<div class="portfolio-card-body">
+<div class="portfolio-card-meta">
+<span class="portfolio-card-number">03</span>
+<span>Site institucional · Consultoria</span>
+</div>
+<h3>Clara M. Consultoria</h3>
+<p>Uma direção mais sóbria para transmitir organização, confiança e proximidade.</p>
+<span class="portfolio-card-link portfolio-card-link-muted">
+                Estudo visual <span>↗</span>
+</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="value-section" id="servicos">
+<div class="section-wrap value-grid">
+<div class="value-heading">
+<div class="section-kicker"><span>✦</span><span>O que um bom site resolve</span></div>
+<h2>Mais do que<br/><em>estar online.</em></h2>
+<p>Um site bem pensado organiza sua presença, ajuda quem chega a entender o seu negócio e deixa o próximo passo mais claro.</p>
+</div>
+<div class="value-list">
+<article class="value-item">
+<span>01</span>
+<div>
+<h3>Uma presença mais profissional</h3>
+<p>Seu negócio ganha um espaço próprio, organizado e coerente com a imagem que você quer transmitir.</p>
+</div>
+</article>
+<article class="value-item">
+<span>02</span>
+<div>
+<h3>Mais clareza para quem chega</h3>
+<p>Serviços, informações e caminhos de contato ficam fáceis de encontrar e entender.</p>
+</div>
+</article>
+<article class="value-item">
+<span>03</span>
+<div>
+<h3>Tudo desenvolvido comigo</h3>
+<p>Eu cuido da direção visual, adaptação para diferentes telas, desenvolvimento e ajustes finais.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="process" id="processo">
+<div class="section-wrap">
+<div class="process-intro">
+<div>
+<div class="section-kicker light"><span>✦</span><span>Como acontece</span></div>
+<h2>Do primeiro rascunho<br/><em>ao site no ar.</em></h2>
+</div>
+<p>Você não precisa chegar com tudo decidido. Eu organizo o caminho com você.</p>
+</div>
+<div class="process-steps">
+<article class="process-step">
+<span class="process-num">01</span>
+<div class="process-line"></div>
+<h3>Eu entendo o seu negócio</h3>
+<p>Conversamos sobre o que você faz e o que o site precisa comunicar.</p>
+</article>
+<article class="process-step">
+<span class="process-num">02</span>
+<div class="process-line"></div>
+<h3>A ideia ganha uma direção</h3>
+<p>Eu organizo estrutura e visual até a ideia ganhar forma.</p>
+</article>
+<article class="process-step">
+<span class="process-num">03</span>
+<div class="process-line"></div>
+<h3>Eu transformo isso em site</h3>
+<p>Eu construo a página e refinamos os detalhes juntos.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="closing" id="contato">
+<div class="section-wrap closing-grid">
+<div class="closing-copy">
+<span class="closing-mark">✦</span>
+<h2>Seu site pode começar<br/><em>com uma conversa.</em></h2>
+<p>Você me conta o que tem em mente. Eu cuido de transformar isso em uma página que faça sentido para o seu negócio.</p>
+</div>
+<div class="closing-action">
+<a class="closing-button" href="https://instagram.com/devsiel" rel="noopener" target="_blank">Me conta seu projeto <span>↗</span></a>
+<p>Você fala diretamente comigo do início ao fim.</p>
+</div>
+</div>
+<footer class="footer section-wrap">
+<a class="footer-brand" href="#inicio">SIEL <span>✦</span></a>
+<p class="footer-copyright">© 2026 Siel. Todos os direitos reservados.</p>
+<a href="https://instagram.com/devsiel" rel="noopener" target="_blank">@devsiel ↗</a>
+</footer>
+</section>
+</main>
+<script>
+    (() => {
+      const root = document.documentElement;
+      const toggle = document.getElementById('themeToggle');
+      const themeMeta = document.querySelector('meta[name="theme-color"]');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      const getTheme = () => root.dataset.theme === 'light' ? 'light' : 'dark';
+
+      const syncThemeUI = () => {
+        if (!toggle) return;
+        const isDark = getTheme() === 'dark';
+        toggle.setAttribute('aria-pressed', String(isDark));
+        toggle.setAttribute('aria-label', isDark ? 'Ativar modo claro' : 'Ativar modo escuro');
+        toggle.setAttribute('title', isDark ? 'Modo claro' : 'Modo escuro');
+        root.style.colorScheme = isDark ? 'dark' : 'light';
+        if (themeMeta) themeMeta.setAttribute('content', isDark ? '#17131b' : '#fbf4ef');
+      };
+
+      if (toggle) {
+        toggle.addEventListener('click', () => {
+          const nextTheme = getTheme() === 'dark' ? 'light' : 'dark';
+
+          if (!reduceMotion) {
+            root.classList.add('theme-is-changing');
+            window.setTimeout(() => root.classList.remove('theme-is-changing'), 420);
+          }
+
+          root.dataset.theme = nextTheme;
+
+          try { localStorage.setItem('siel-theme', nextTheme); }
+          catch (e) {}
+
+          syncThemeUI();
+        });
+      }
+
+      syncThemeUI();
+
+      /* Motion: progressively enhanced so content stays visible if JS fails. */
+      if (!reduceMotion && 'IntersectionObserver' in window) {
+        const revealGroups = [
+          ['.value-heading', 0],
+          ['.value-item', 70],
+          ['.process-intro', 0],
+          ['.process-step', 80],
+          ['.closing-copy', 0],
+          ['.closing-action', 90]
+        ];
+
+        const revealEls = [];
+        revealGroups.forEach(([selector, step]) => {
+          document.querySelectorAll(selector).forEach((el, index) => {
+            el.classList.add('reveal-on-scroll');
+            el.style.setProperty('--reveal-delay', `${Math.min(index * step, 240)}ms`);
+            revealEls.push(el);
+          });
+        });
+
+        requestAnimationFrame(() => root.classList.add('motion-ready'));
+
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-revealed');
+            obs.unobserve(entry.target);
+          });
+        }, {
+          rootMargin: '0px 0px -10% 0px',
+          threshold: 0.08
+        });
+
+        revealEls.forEach(el => observer.observe(el));
+
+        /* Hero has one intentional entrance moment. */
+        const header = document.querySelector('.header');
+        const heroCopy = document.querySelector('.hero-copy');
+        const heroAccent = document.querySelector('.hero-accent');
+        const heroMonogram = document.querySelector('.hero-monogram');
+
+        [header, heroCopy, heroAccent, heroMonogram].forEach(el => el && el.classList.add('hero-motion'));
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => root.classList.add('hero-entered'));
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
