@@ -1,11 +1,11 @@
-SIEL — Landing Page v34.11
+SIEL — Landing Page v34.12
 
-Performance pass (visual preserved):
-- hero PNG converted to WebP and preloaded at high priority;
-- Silvia's Hair and Clara previews converted to WebP;
-- below-the-fold portfolio images use lazy loading / async decoding;
-- Jucelio third-party screenshot is deferred until its card approaches the viewport;
-- Google Fonts stylesheet no longer blocks the first render;
-- hero headline/header stay paintable immediately (no opacity entrance delaying LCP);
-- below-the-fold sections use content-visibility;
-- unused legacy images removed from the build.
+Base: v34.11 otimizada.
+
+Ajuste desta versão:
+- estrelas flutuantes da hero ocultas em telas <= 820 px para evitar colisão com texto;
+- ✦ da logo e assinatura inferior preservados;
+- espaçamento mobile revisado entre título, descrição e CTAs;
+- refinamento adicional para 480 px e 360 px;
+- desktop permanece inalterado;
+- otimizações de performance da v34.11 preservadas.

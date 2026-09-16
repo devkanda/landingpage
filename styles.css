@@ -4480,3 +4480,72 @@ html[data-theme="light"] body .hero .hero-media-clean::after{
   content-visibility:auto;
   contain-intrinsic-size:auto 900px;
 }
+
+/* ======================================================
+   V34.12 — MOBILE HERO POLISH
+   - Remove as duas estrelas flutuantes em telas estreitas.
+   - Mantém os ✦ estruturais da marca/divisor.
+   - Dá respiro consistente entre título, texto e CTAs.
+   ====================================================== */
+
+@media (max-width: 820px){
+  /* As estrelas absolutas competem com o conteúdo quando o texto quebra. */
+  .hero-spark-left,
+  .hero-spark-right{
+    display:none !important;
+  }
+
+  .hero-copy p{
+    margin-top:22px !important;
+  }
+
+  .hero-actions{
+    margin-top:24px !important;
+  }
+}
+
+@media (max-width: 480px){
+  .hero-copy{
+    width:calc(100% - 34px) !important;
+  }
+
+  .hero-copy h1{
+    max-width:10ch !important;
+    line-height:.97 !important;
+  }
+
+  .hero-copy p{
+    max-width:34ch !important;
+    margin-top:21px !important;
+    line-height:1.58 !important;
+  }
+
+  .hero-actions{
+    width:100% !important;
+    margin-top:23px !important;
+    gap:10px !important;
+  }
+
+  .hero-actions .button{
+    width:min(100%, 270px) !important;
+  }
+}
+
+@media (max-width: 360px){
+  .hero-copy{
+    width:calc(100% - 28px) !important;
+  }
+
+  .hero-copy h1{
+    font-size:clamp(2.35rem, 11vw, 2.75rem) !important;
+  }
+
+  .hero-copy p{
+    max-width:32ch !important;
+    font-size:.91rem !important;
+  }
+
+  .hero-actions .button{
+    max-width:258px !important;
+  }
+}
