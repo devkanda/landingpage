@@ -4197,3 +4197,16 @@ button:focus-visible{
     transition:none;
   }
 }
+
+
+/* ======================================================
+   V34.27 — PREVIEW LOCAL JUCELIO SILVA
+   Remove dependência de screenshot externo.
+   ====================================================== */
+
+.jucelio-card-preview .jucelio-site-shot{
+  opacity:1 !important;
+}
+
+/* O fallback permanece atrás da imagem apenas como segurança,
+   sem participar visualmente quando o asset local carrega. */
