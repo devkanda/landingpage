@@ -1,9 +1,11 @@
-SIEL — Landing Page v34.28
+SIEL — Landing Page v34.29
 
-Ajuste do preview local do Jucelio Silva.
+Refino da seção “O que eu cuido”.
 
-- corrige a sensação de zoom do asset da v34.27;
-- captura reduzida para 90% dentro do mesmo frame;
-- respiro preenchido com a própria tonalidade clara do site;
-- carregamento local rápido preservado;
-- restante da v34.27 intacto.
+Mudanças:
+- introdução encurtada;
+- textos dos três pilares mais diretos;
+- frase grande de fechamento removida;
+- gap entre título e apoio reduzido;
+- seção ficou mais curta e concentrada;
+- restante da v34.28 preservado.
