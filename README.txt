@@ -1,16 +1,11 @@
-SIEL — Landing Page v34.10
+SIEL — Landing Page v34.11
 
-Correção definitiva do fundo da hero.
-
-Problema encontrado:
-- regras antigas `html[data-theme="dark"] .hero` e `light`
-  tinham mais especificidade que `.hero`;
-- por isso o gradiente antigo sobrescrevia o novo asset,
-  mesmo com `!important`.
-
-Correção:
-- imagem aplicada diretamente no seletor do tema;
-- overlays praticamente zerados;
-- layers auxiliares da hero não podem mais cobrir o asset;
-- ondas do arquivo hero-abstract-dark.png ficam visíveis;
-- estrutura, header, CTAs, portfólio e restante do site preservados.
+Performance pass (visual preserved):
+- hero PNG converted to WebP and preloaded at high priority;
+- Silvia's Hair and Clara previews converted to WebP;
+- below-the-fold portfolio images use lazy loading / async decoding;
+- Jucelio third-party screenshot is deferred until its card approaches the viewport;
+- Google Fonts stylesheet no longer blocks the first render;
+- hero headline/header stay paintable immediately (no opacity entrance delaying LCP);
+- below-the-fold sections use content-visibility;
+- unused legacy images removed from the build.

@@ -2385,8 +2385,8 @@ html[data-theme="dark"] .closing-button:hover{
   overflow:hidden;
   color:#f1eadc;
   background:
-    linear-gradient(90deg,rgba(12,12,11,.98) 0 49%,rgba(12,12,11,.48) 67%,rgba(12,12,11,.14) 100%),
-    url("https://juceliosilva.com.br/assets/images/jucelio-hero.webp") center right/52% auto no-repeat,
+    radial-gradient(circle at 78% 52%,rgba(213,183,111,.16),transparent 30%),
+    linear-gradient(112deg,rgba(12,12,11,.99) 0 48%,rgba(30,27,22,.92) 68%,rgba(16,15,13,.98) 100%),
     #151413;
 }
 
@@ -4172,7 +4172,7 @@ html[data-theme="dark"] .header-center .nav a:hover{
   overflow:hidden;
   background:
     linear-gradient(rgba(20,16,24,.18), rgba(20,16,24,.18)),
-    url("./assets/hero-abstract-dark.png") center center / cover no-repeat !important;
+    url("./assets/hero-abstract-dark.webp") center center / cover no-repeat !important;
 }
 
 /* Remove as ondas CSS antigas para não competir com o novo fundo. */
@@ -4322,7 +4322,7 @@ html[data-theme="dark"] .hero .button-secondary:hover{
 
 .hero{
   background:
-    url("./assets/hero-abstract-dark.png") center 72% / cover no-repeat !important;
+    url("./assets/hero-abstract-dark.webp") center 72% / cover no-repeat !important;
 }
 
 /* Remove quase todo o escurecimento que apagava as ondas. */
@@ -4368,7 +4368,7 @@ html[data-theme="dark"] .hero .button-secondary:hover{
 
 .hero{
   background:
-    url("./assets/hero-abstract-dark.png") center 68% / cover no-repeat !important;
+    url("./assets/hero-abstract-dark.webp") center 68% / cover no-repeat !important;
 }
 
 /* Deixa o asset trabalhar sem um véu escuro por cima. */
@@ -4412,7 +4412,7 @@ html[data-theme="dark"] .hero .button-secondary:hover{
 */
 html[data-theme="dark"] body .hero,
 html[data-theme="light"] body .hero{
-  background-image:url("./assets/hero-abstract-dark.png") !important;
+  background-image:url("./assets/hero-abstract-dark.webp") !important;
   background-color:#18131d !important;
   background-repeat:no-repeat !important;
   background-size:cover !important;
@@ -4468,4 +4468,15 @@ html[data-theme="light"] body .hero .hero-media-clean::after{
   html[data-theme="light"] body .hero{
     background-position:center 76% !important;
   }
+}
+
+/* ======================================================
+   V34.11 — PERFORMANCE PASS
+   Keep below-the-fold layout/paint work out of the first frame.
+   ====================================================== */
+.value-section,
+.process,
+.closing{
+  content-visibility:auto;
+  contain-intrinsic-size:auto 900px;
 }
